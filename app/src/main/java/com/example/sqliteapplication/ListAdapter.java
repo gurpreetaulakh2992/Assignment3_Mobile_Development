@@ -38,7 +38,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast=Toast.makeText(view.getContext(),Html.fromHtml ("<font color='red' ><b>" +"Results: "+"<br/>"+myListData.getName()+"<br/>"+myListData.getDob()+"<br/>"+myListData.getContact()+"</b></font>"),Toast.LENGTH_LONG);
+                Toast toast=Toast.makeText(view.getContext(),Html.fromHtml ("<font color='red'><big><b>" +"Results: "+"<br/>"+myListData.getName()+"<br/>"+myListData.getDob()+"<br/>"+myListData.getContact()+"</b></big></font>"),Toast.LENGTH_LONG);
                 toast.setGravity(Gravity.CENTER,0,0);
                 toast.show();
             }
